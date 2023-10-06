@@ -1,0 +1,89 @@
+const mongoose = require('mongoose')
+
+const personal_infoSchema = new mongoose.Schema({  //object
+    first_name:{ //feild
+        type:String,
+        Required:true
+    },
+    middle_name:{
+        type:String,
+        Required:true
+    },
+    last_name:{
+        type:String,
+        Required:true
+    },
+    city:{ 
+        type:String,
+        Required:true
+    },
+    pincode:{
+        type:String,
+        Required:true
+    },
+    permanent_address:{
+        type:String,
+        Required:true
+    },
+    dob:{
+        type:String,
+        Required:true
+    },
+    pan_number:{ 
+        type:String,
+        Required:true
+    },
+    mobile_number:{
+        type:String,
+        Required:true
+    },
+    aadhar_number:{
+        type:String,
+        Required:true
+    },
+    email:{
+        type:String,
+        Required:true
+    },
+    blood_group:{
+        type:String,
+        Required:true
+    },
+    current_address:{
+        type:String,
+        Required:true
+    },
+    emergency_number:{ 
+        type:String,
+        Required:true
+    },
+    country:{
+        type:String,
+        Required:true
+    },
+    insaurance_card_number:{
+        type:String,
+        Required:true
+    },
+    state:{
+        type:String,
+        Required:true
+    },
+    health_id_number:{
+        type:String,
+        Required:true
+    },
+    gender:{
+        type:String,
+        Required:true
+    },
+    medical_detail:{
+        type:String,
+        Required:true
+    },
+},
+
+{timestaps:true})
+const personal_info = mongoose.model('personal_info',personal_infoSchema)
+
+module.exports = personal_info
